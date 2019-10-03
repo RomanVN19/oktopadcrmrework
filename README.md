@@ -17,3 +17,13 @@ npm install sqlite3
   },
 }
 ````
+
+# Сборка
+````
+npm run build-client
+npm run build-server
+````
+Запуск сборки
+````
+npm run ./lib/server-node.js
+````
