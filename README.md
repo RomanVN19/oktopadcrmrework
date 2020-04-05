@@ -27,3 +27,5 @@ npm run build-server
 ````
 npm run ./lib/server-node.js
 ````
+# Настройка сервера
+[Настройка сверера](https://github.com/romannep/katejs-boilerplate/blob/master/ServerSetup.md)
