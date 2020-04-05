@@ -1,5 +1,8 @@
 import { use } from 'katejs/lib/client';
 
+import 'moment/locale/ru';
+import 'katejs/lib/client.css';
+
 import TestForm from 'forms/TestForm';
 
 import { structures, title, packageName } from './structure';
