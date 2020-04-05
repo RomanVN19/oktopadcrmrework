@@ -35,7 +35,7 @@ chmod +x run.sh
 ````
 run.sh
 ````
-nohup node ./lib/serverpb.js &
+nohup node ./lib/server-node.js &
 ````
 
 # Настройка СУБД MySQL
