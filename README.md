@@ -1,10 +1,10 @@
-# Boilerplate app for [KateJS](https://github.com/romannep/katejs)
+# Шаблон приложения для [KateJS](https://github.com/romannep/katejs)
 
 
-# Database
+## База данных
 По умолчанию используется база данных MySQL
 
-Для работы с кирилицей необходимо при создании базы данных
+Для работы с кириллицей необходимо при создании базы данных
 для проекта установить ей кодировку utf8mb4 .
 
 Для использования SQLite
@@ -21,7 +21,18 @@ npm install sqlite3
 }
 ````
 
-# Сборка
+Перед началом работы необходимо синхронизировать структуру БД
+````
+npm run [dev-]dbsync
+````
+
+## Разработка
+````
+npm run dev-server
+npm run dev-client
+````
+
+## Сборка
 ````
 npm run build-client
 npm run build-server
