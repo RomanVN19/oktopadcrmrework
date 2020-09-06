@@ -24,7 +24,7 @@ bash-4.2$ mkdir prod
 bash-4.2$ cd prod
 bash-4.2$ git init
 ````
-# Установка CRM
+# Установка приложения
 ````
 bash-4.2$ git remote add origin https://github.com/user/repo.git
 git pull
@@ -92,7 +92,7 @@ server {
 git pull
 npm run dbsync
 npm run build-server
-npm run build-server
+npm run build-client
 ./run.sh
 ````
 
