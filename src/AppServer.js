@@ -8,11 +8,12 @@ const AppServer = parent => class Server extends use(parent) {
     super(params);
     makeEntitiesFromStructures(this.entities, structures);
 
-    // this.entites == {
-    //   Task, // class
-    //   ...
-    // }
-    // Can be changeg by name  this.entities[_entity_name_]
+    // Entities can be changed by name  this.entities[_entity_name_]
+    // You can use class mixins like:
+    // this.entities = {
+    //   ...this.entities,
+    //   Task: Task(this.entities.SessionSchedule),
+    // };
   }
 };
 AppServer.package = packageName;
