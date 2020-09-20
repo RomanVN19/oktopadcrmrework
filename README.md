@@ -41,5 +41,8 @@ npm run build-server
 ````
 npm run ./lib/server-node.js
 ````
-# Настройка сервера
+## Настройка сервера
 [Настройка сверера](https://github.com/romannep/katejs-boilerplate/blob/master/ServerSetup.md)
+
+## Лицензия
+[AGPL-3.0](https://github.com/romannep/katejs-boilerplate/blob/master/LICENSE)
