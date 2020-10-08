@@ -2,6 +2,9 @@
 
 
 ## База данных
+Перед началом работы отредатируйте параметры соединения
+с СУБД в файле `env[.local].json`
+
 По умолчанию используется база данных MySQL
 
 Для работы с кириллицей необходимо при создании базы данных
@@ -21,12 +24,13 @@ npm install sqlite3
 }
 ````
 
-Перед началом работы необходимо синхронизировать структуру БД
+
+## Разработка
+Перед запуском приложения необходимо синхронизировать структуру БД
 ````
 npm run [dev-]dbsync
 ````
-
-## Разработка
+Запуск приложения
 ````
 npm run dev-server
 npm run dev-client
@@ -43,6 +47,23 @@ npm run ./lib/server-node.js
 ````
 ## Настройка сервера
 [Настройка сверера](https://github.com/romannep/katejs-boilerplate/blob/master/ServerSetup.md)
+
+## Публикация приложения как пакета
+Разово нужна регистрация на [npmjs.org](https://www.npmjs.com/)
+и авторизация
+````
+npm login
+````
+Перед публикацией проверьте имя пакета в `package.json` и
+`src\structure.js`
+````
+export const packageName = 'katejs-your-package-name';
+````
+Для публикации выполните две команды
+````
+npm run build-package
+npm publish
+````
 
 ## Лицензия
 [AGPL-3.0](https://github.com/romannep/katejs-boilerplate/blob/master/LICENSE)
