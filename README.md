@@ -16,12 +16,11 @@ npm install sqlite3
 ````
 `env[.local].json`
 ````
-{
-  "database": { 
+  "database": {
     "dialect": "sqlite",
-    "storage": "./test.db"
+    "storage": "./dev.db",
+    "foreignKeys": false
   },
-}
 ````
 
 
