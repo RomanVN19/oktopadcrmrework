@@ -1,6 +1,6 @@
 {
-  "name": "katejs-boilerplate",
-  "version": "2.0.1",
+  "name": "oktopad-crm-rework",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,10 @@
   "author": "Roman Nep <neproman@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "katejs": "^1.1.0"
+    "katejs": "^1.1.20",
+    "katejs-modules": "^0.0.26",
+    "oktopad-crm": "^1.2.0",
+    "react-beautiful-dnd": "^12.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",

@@ -5,10 +5,12 @@ import 'katejs/lib/client.css';
 
 import TestForm from 'forms/TestForm';
 
+import AppOktopad from 'oktopad-crm/package/AppClient';
+
 import { structures, title, packageName } from './structure';
 import env from './front.env.json';
 
-const AppClient = parent => class Client extends use(parent) {
+const AppClient = parent => class Client extends use(parent, AppOktopad) {
   static title = title;
 
   constructor(params) {

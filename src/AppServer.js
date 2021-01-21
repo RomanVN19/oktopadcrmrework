@@ -1,7 +1,9 @@
 import { makeEntitiesFromStructures, use } from 'katejs';
+import AppOktopad from 'oktopad-crm/package/AppServer';
+
 import { structures, title, packageName } from './structure';
 
-const AppServer = parent => class Server extends use(parent) {
+const AppServer = parent => class Server extends use(parent, AppOktopad) {
   static title = title;
 
   constructor(params) {
